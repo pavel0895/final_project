@@ -7,6 +7,7 @@ from page_objects.base_app import BasePage
 class LoginAdmin(BasePage):
 
     def __init__(self, browser):
+        super().__init__(browser)
         self.browser = browser
         self.logger = browser.logger
         self.USERNAME_INPUT = (By.CSS_SELECTOR, "#input-username")

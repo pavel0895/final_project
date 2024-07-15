@@ -8,6 +8,7 @@ class AccRegistration(BasePage):
     path = "/index.php?route=account/register"
 
     def __init__(self, browser):
+        super().__init__(browser)
         self.browser = browser
         self.logger = browser.logger
         self.FIRST_NAME = (By.XPATH, "//*[@id='input-firstname']")

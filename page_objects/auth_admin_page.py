@@ -5,6 +5,7 @@ from page_objects.base_app import BasePage
 
 class AuthAdmin(BasePage):
     def __init__(self, browser):
+        super().__init__(browser)
         self.browser = browser
         self.logger = browser.logger
         self.class_name = self.__class__.__name__

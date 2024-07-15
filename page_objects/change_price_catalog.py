@@ -7,6 +7,7 @@ class PriceCatalog(BasePage):
     path = "/en-gb/catalog/desktops"
 
     def __init__(self, browser):
+        super().__init__(browser)
         self.browser = browser
         self.logger = browser.logger
         self.PRODUCT_LIST = (By.ID, "product-list")

@@ -6,6 +6,7 @@ from page_objects.base_app import BasePage
 
 class AddNewProductAdminSection(BasePage):
     def __init__(self, browser):
+        super().__init__(browser)
         self.WebDriverWait = None
         self.browser = browser
         self.LINK_ADD_NEW = (By.XPATH, "//i[@class='fa-solid fa-plus']")

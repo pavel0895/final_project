@@ -7,6 +7,7 @@ from page_objects.base_app import BasePage
 class MainPage(BasePage):
 
     def __init__(self, browser):
+        super().__init__(browser)
         self.browser = browser
         self.logger = browser.logger
         self.LINK_OPENCART = (By.LINK_TEXT, "Specials")

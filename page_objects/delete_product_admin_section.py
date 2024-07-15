@@ -5,6 +5,7 @@ from page_objects.base_app import BasePage
 
 class DeleteProductAdminSection(BasePage):
     def __init__(self, browser):
+        super().__init__(browser)
         self.browser = browser
         self.logger = browser.logger
         self.CHECKBOX = (By.XPATH, "//*[@id = 'form-product']/div[1]/table/tbody/tr[1]/td[1]/input")

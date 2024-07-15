@@ -6,6 +6,7 @@ from page_objects.base_app import BasePage
 class PriceMain(BasePage):
 
     def __init__(self, browser):
+        super().__init__(browser)
         self.browser = browser
         self.logger = browser.logger
         self.MAIN_PRODUCTS = (By.ID, "content")

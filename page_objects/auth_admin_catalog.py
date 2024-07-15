@@ -6,6 +6,7 @@ from page_objects.base_app import BasePage
 class AdminCatalog(BasePage):
 
     def __init__(self, browser):
+        super().__init__(browser)
         self.logger = browser.logger
         self.browser = browser
         self.MENU_CATALOG = (By.XPATH, "//*[@id ='menu-catalog']")
