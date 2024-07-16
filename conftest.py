@@ -13,7 +13,7 @@ from webdriver_manager.firefox import GeckoDriverManager
 
 def pytest_addoption(parser):
     parser.addoption("--browser", action="store", default="chrome", help="Browser to use")
-    parser.addoption("--base_url", default="http://192.168.0.100:8081", help="Base URL")
+    parser.addoption("--base_url", default="http://192.168.0.3:8081", help="Base URL")
     parser.addoption("--headless", action="store_true", help="Run tests in headless mode")
     parser.addoption("--log_level", action="store", default="INFO", help="Log level")
     parser.addoption("--executor", action="store", default="local", help="Executor address")
